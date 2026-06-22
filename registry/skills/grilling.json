@@ -1,0 +1,24 @@
+{
+  "slug": "grilling",
+  "displayName": "Grilling",
+  "description": "Interview the user relentlessly about a plan or design until decisions and dependencies are clear.",
+  "license": "MIT",
+  "author": "Matt Pocock",
+  "homepage": "https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling",
+  "tags": [
+    "productivity",
+    "planning",
+    "design"
+  ],
+  "compatibleTargets": [
+    "*"
+  ],
+  "source": {
+    "type": "github",
+    "owner": "mattpocock",
+    "repo": "skills",
+    "rev": "6eeb81b5fcfeeb5bd531dd47ab2f9f2bbea27461",
+    "path": "skills/productivity/grilling",
+    "narHash": "sha256-6T0KwZcUIIbd6kpkQXPCnnJPVY2mEjxYjed4FjKnRAw="
+  }
+}

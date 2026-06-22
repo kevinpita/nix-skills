@@ -1,0 +1,26 @@
+name: check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
+      - name: Install Nix
+        uses: cachix/install-nix-action@b97f05dcb019ddea06450a50ef6203d2fdc19fee
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+      - name: Registry check
+        run: nix run .#nix-skills -- check --fetch
+      - name: Flake check
+        run: nix flake check

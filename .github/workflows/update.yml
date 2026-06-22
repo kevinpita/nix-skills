@@ -1,0 +1,74 @@
+name: update skills
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Skill slug to update, or --all"
+        required: false
+        default: "--all"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  enumerate:
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.slugs.outputs.slugs }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
+      - name: Install Nix
+        uses: cachix/install-nix-action@b97f05dcb019ddea06450a50ef6203d2fdc19fee
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+      - name: Resolve slugs
+        id: slugs
+        run: |
+          if [ "${{ github.event.inputs.slug || '--all' }}" != "--all" ]; then
+            printf 'slugs=["%s"]\n' "${{ github.event.inputs.slug }}" >> "$GITHUB_OUTPUT"
+          else
+            python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          slugs = sorted(path.stem for path in Path("registry/skills").glob("*.json"))
+          print("slugs=" + json.dumps(slugs))
+          PY
+          fi
+
+  update:
+    needs: enumerate
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJSON(needs.enumerate.outputs.slugs) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
+      - name: Install Nix
+        uses: cachix/install-nix-action@b97f05dcb019ddea06450a50ef6203d2fdc19fee
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+      - name: Update skill
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: nix run .#nix-skills -- update "${{ matrix.slug }}"
+      - name: Validate
+        run: nix run .#nix-skills -- check --fetch
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update-skill/${{ matrix.slug }}
+          delete-branch: true
+          title: "Update skill ${{ matrix.slug }}"
+          commit-message: "Update skill ${{ matrix.slug }}"
+          body: |
+            Automated registry refresh for `${{ matrix.slug }}`.
