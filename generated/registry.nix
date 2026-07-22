@@ -9,15 +9,15 @@ builtins.fromJSON ''
     ],
     "description": "Build and sharpen a project's domain model, glossary, and durable architectural decisions.",
     "displayName": "Domain Modeling",
-    "homepage": "https://github.com/mattpocock/skills/tree/9603c1cc8118d08bc1b3bf34cf714f62178dea3b/skills/engineering/domain-modeling",
+    "homepage": "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/engineering/domain-modeling",
     "license": "MIT",
     "slug": "domain-modeling",
     "source": {
-      "narHash": "sha256-S6pARK99oGGSi6XdFm6zYKHT4gjOCN0wIPZFcl1hREE=",
+      "narHash": "sha256-o/H9s3t6ahBqFwpkOMBOTwpsvb33pgvpI9n0PA+uLYM=",
       "owner": "mattpocock",
       "path": "skills/engineering/domain-modeling",
       "repo": "skills",
-      "rev": "9603c1cc8118d08bc1b3bf34cf714f62178dea3b",
+      "rev": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
       "type": "github"
     },
     "tags": [
