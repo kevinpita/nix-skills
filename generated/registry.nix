@@ -85,15 +85,15 @@ builtins.fromJSON ''
     ],
     "description": "Compact the current conversation into a handoff document for another agent to pick up.",
     "displayName": "Handoff",
-    "homepage": "https://github.com/mattpocock/skills/tree/9603c1cc8118d08bc1b3bf34cf714f62178dea3b/skills/productivity/handoff",
+    "homepage": "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/handoff",
     "license": "MIT",
     "slug": "handoff",
     "source": {
-      "narHash": "sha256-S6pARK99oGGSi6XdFm6zYKHT4gjOCN0wIPZFcl1hREE=",
+      "narHash": "sha256-o/H9s3t6ahBqFwpkOMBOTwpsvb33pgvpI9n0PA+uLYM=",
       "owner": "mattpocock",
       "path": "skills/productivity/handoff",
       "repo": "skills",
-      "rev": "9603c1cc8118d08bc1b3bf34cf714f62178dea3b",
+      "rev": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
       "type": "github"
     },
     "tags": [
