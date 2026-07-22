@@ -109,15 +109,15 @@ builtins.fromJSON ''
     ],
     "description": "Reference for writing and editing skills well: the vocabulary and principles that make a skill predictable.",
     "displayName": "Writing Great Skills",
-    "homepage": "https://github.com/mattpocock/skills/tree/9603c1cc8118d08bc1b3bf34cf714f62178dea3b/skills/productivity/writing-great-skills",
+    "homepage": "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/writing-great-skills",
     "license": "MIT",
     "slug": "writing-great-skills",
     "source": {
-      "narHash": "sha256-S6pARK99oGGSi6XdFm6zYKHT4gjOCN0wIPZFcl1hREE=",
+      "narHash": "sha256-o/H9s3t6ahBqFwpkOMBOTwpsvb33pgvpI9n0PA+uLYM=",
       "owner": "mattpocock",
       "path": "skills/productivity/writing-great-skills",
       "repo": "skills",
-      "rev": "9603c1cc8118d08bc1b3bf34cf714f62178dea3b",
+      "rev": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
       "type": "github"
     },
     "tags": [
