@@ -61,15 +61,15 @@ builtins.fromJSON ''
     ],
     "description": "Interview the user relentlessly about a plan or design until decisions and dependencies are clear.",
     "displayName": "Grilling",
-    "homepage": "https://github.com/mattpocock/skills/tree/ed37663cc5fbef691ddfecd080dff42f7e7e350d/skills/productivity/grilling",
+    "homepage": "https://github.com/mattpocock/skills/tree/2ab958093e83e0ec752e6c1c5932da465bf23e0c/skills/productivity/grilling",
     "license": "MIT",
     "slug": "grilling",
     "source": {
-      "narHash": "sha256-o/H9s3t6ahBqFwpkOMBOTwpsvb33pgvpI9n0PA+uLYM=",
+      "narHash": "sha256-dQtG6usJWlg/FqTajrjcs8GSdymH92WsgLiUaCfvKPA=",
       "owner": "mattpocock",
       "path": "skills/productivity/grilling",
       "repo": "skills",
-      "rev": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
+      "rev": "2ab958093e83e0ec752e6c1c5932da465bf23e0c",
       "type": "github"
     },
     "tags": [
