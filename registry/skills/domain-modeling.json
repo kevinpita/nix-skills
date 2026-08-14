@@ -4,7 +4,7 @@
   "description": "Build and sharpen a project's domain model, glossary, and durable architectural decisions.",
   "license": "MIT",
   "author": "Matt Pocock",
-  "homepage": "https://github.com/mattpocock/skills/tree/84fdeffd12f2ee307994d1eb6feb48173b6e0502/skills/engineering/domain-modeling",
+  "homepage": "https://github.com/mattpocock/skills/tree/8b78b531ab965735c5dc74f6f7a219e1e37326df/skills/engineering/domain-modeling",
   "tags": [
     "engineering",
     "architecture",
@@ -17,8 +17,8 @@
     "type": "github",
     "owner": "mattpocock",
     "repo": "skills",
-    "rev": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+    "rev": "8b78b531ab965735c5dc74f6f7a219e1e37326df",
     "path": "skills/engineering/domain-modeling",
-    "narHash": "sha256-pseSJJb5nBBGPzpxA1GzjGLB9OrT+u0At1saJ4NqZ1E="
+    "narHash": "sha256-jsXcMkhu15MxR0zXnLLJeni0q0Aew2UxUSojl6zmOvg="
   }
 }
