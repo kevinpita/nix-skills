@@ -5,7 +5,7 @@ This file is generated from `registry/skills/*.json`.
 <!-- nix-skills-catalog:start -->
 | Skill | Description | Targets | Dependencies | Source |
 | --- | --- | --- | --- | --- |
-| `domain-modeling` | Build and sharpen a project's domain model, glossary, and durable architectural decisions. | * | - | [mattpocock/skills](https://github.com/mattpocock/skills/tree/8b78b531ab965735c5dc74f6f7a219e1e37326df/skills/engineering/domain-modeling) |
+| `domain-modeling` | Build and sharpen a project's domain model, glossary, and durable architectural decisions. | * | - | [mattpocock/skills](https://github.com/mattpocock/skills/tree/068b6e0c62393147daf03530149cdce209c93da8/skills/engineering/domain-modeling) |
 | `grill-with-docs` | Run a relentless planning interview that sharpens a design and records docs as the plan evolves. | * | domain-modeling, grilling | [mattpocock/skills](https://github.com/mattpocock/skills/tree/8b78b531ab965735c5dc74f6f7a219e1e37326df/skills/engineering/grill-with-docs) |
 | `grilling` | Interview the user relentlessly about a plan or design until decisions and dependencies are clear. | * | - | [mattpocock/skills](https://github.com/mattpocock/skills/tree/8b78b531ab965735c5dc74f6f7a219e1e37326df/skills/productivity/grilling) |
 | `handoff` | Compact the current conversation into a handoff document for another agent to pick up. | * | - | [mattpocock/skills](https://github.com/mattpocock/skills/tree/8b78b531ab965735c5dc74f6f7a219e1e37326df/skills/productivity/handoff) |
