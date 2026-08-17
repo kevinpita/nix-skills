@@ -37,15 +37,15 @@ builtins.fromJSON ''
     ],
     "description": "Run a relentless planning interview that sharpens a design and records docs as the plan evolves.",
     "displayName": "Grill With Docs",
-    "homepage": "https://github.com/mattpocock/skills/tree/8b78b531ab965735c5dc74f6f7a219e1e37326df/skills/engineering/grill-with-docs",
+    "homepage": "https://github.com/mattpocock/skills/tree/068b6e0c62393147daf03530149cdce209c93da8/skills/engineering/grill-with-docs",
     "license": "MIT",
     "slug": "grill-with-docs",
     "source": {
-      "narHash": "sha256-jsXcMkhu15MxR0zXnLLJeni0q0Aew2UxUSojl6zmOvg=",
+      "narHash": "sha256-QYJScM5FqsN+QsHHo5oJx/1e7YqGxdod/Iv6kpnQZ+o=",
       "owner": "mattpocock",
       "path": "skills/engineering/grill-with-docs",
       "repo": "skills",
-      "rev": "8b78b531ab965735c5dc74f6f7a219e1e37326df",
+      "rev": "068b6e0c62393147daf03530149cdce209c93da8",
       "type": "github"
     },
     "tags": [
